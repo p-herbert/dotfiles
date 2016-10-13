@@ -1,0 +1,7 @@
+# Vim Files
+*~
+*.swp
+*.swo
+
+*.qicon
+*.DS_Store
