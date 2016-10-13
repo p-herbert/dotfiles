@@ -1,9 +1,5 @@
 # README
 
-
-
-# Installation
-
 Create a symbolic link from the repository `.dotfiles` to the home directory
 
 ~~~bash
