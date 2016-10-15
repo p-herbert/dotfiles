@@ -21,3 +21,5 @@
     rb = pull --rebase upstream master
     up = "!f() { git remote add upstream $1; }; f"
     RESET = reset --hard HEAD~1
+    pm = push origin master
+    pu = pull upstream master
