@@ -26,6 +26,9 @@
         "react-native/no-color-literals": 2,
         "no-plusplus": [
           "error", {"allowForLoopAfterthoughts": true}
+        ],
+        "no-param-reassign": [
+            "error", {"props": true}
         ]
     },
     "peerDependencies": {
