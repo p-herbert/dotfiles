@@ -25,11 +25,21 @@
         "react-native/no-inline-styles": 2,
         "react-native/no-color-literals": 2,
         "no-plusplus": [
-            "error", {"allowForLoopAfterthoughts": true}
+            "error", {
+                "allowForLoopAfterthoughts": true
+            }
         ],
-        "no-param-reassign": 0
+        "no-param-reassign": 0,
+        "eol-last": 2,
+        "no-multiple-empty-lines": [
+            "error", {
+                "max": 2,
+                "maxEOF": 1
+            }
+        ]
     },
     "peerDependencies": {
         "eslint": ">=3.5.0"
     }
 }
+
