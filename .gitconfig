@@ -23,5 +23,5 @@
     RESET = reset --hard HEAD~1
     pm = push origin master
     pu = pull upstream master
-    sh = "!f() { commit=${1-0}; max=`git hist | wc -l | sed -e 's/[[:blank:]]//g'`; git show HEAD~`echo "$commit\n$max" | sort -r | tail -1`; }; f"
+    sh = "!f() { commit=${1-0}; git show HEAD~$commit; }; f"
 
