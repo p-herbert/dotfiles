@@ -24,4 +24,4 @@
     pm = push origin master
     pu = pull upstream master
     sh = "!f() { commit=${1-0}; git show HEAD~$commit; }; f"
-
+    ca = "!f() { git add $1 && git ci; }; f"
