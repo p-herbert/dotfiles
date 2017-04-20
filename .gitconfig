@@ -1,11 +1,13 @@
 [user]
-	name = p-herbert
-	email = pete.a.herbert@gmail.com
+    name = p-herbert
+    email = pete@sunsama.com
 [core]
-	autocrlf = input
+    autocrlf = input
     safecrlf = true
-	editor = /usr/local/bin/vim
-	excludesfile = /Users/PeterHerbert/.gitignore
+    editor = /usr/local/bin/vim
+    excludesfile = /Users/PeterHerbert/.gitignore
+[push]
+    default = current
 [alias]
     co = checkout
     ci = commit
@@ -23,5 +25,6 @@
     RESET = reset --hard HEAD~1
     pm = push origin master
     pu = pull upstream master
+    po = push origin
     sh = "!f() { commit=${1-0}; git show HEAD~$commit; }; f"
     ca = "!f() { git add $1 && git ci; }; f"
