@@ -29,3 +29,4 @@
     pl = pull origin
     sh = "!f() { commit=${1-0}; git show HEAD~$commit; }; f"
     ca = "!f() { git add $1 && git ci; }; f"
+    dc = diff --cached
