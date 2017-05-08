@@ -87,6 +87,7 @@ source $ZSH/oh-my-zsh.sh
 # Vim bindings
 bindkey -v
 bindkey -v '^?' backward-delete-char
+bindkey -M vicmd v edit-command-line
 
 function zle-line-init zle-keymap-select {
     RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
