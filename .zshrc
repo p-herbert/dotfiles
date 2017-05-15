@@ -84,6 +84,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Add powerline
+source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh;
+
 # Vim bindings
 bindkey -v
 bindkey -v '^?' backward-delete-char
