@@ -29,7 +29,6 @@ ZSH_THEME="ys"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
-
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
 
@@ -83,9 +82,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Add powerline
-source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh;
 
 # Vim bindings
 bindkey -v
