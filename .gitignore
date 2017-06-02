@@ -1,6 +1,7 @@
 # Directories #
 ###############
 node_modules
+.meteor
 
 # Temporary Files #
 ###################
