@@ -6,5 +6,11 @@
 *.qicon
 *.DS_Store
 
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
 # Folders
 node_modules
