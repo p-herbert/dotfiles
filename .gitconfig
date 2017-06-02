@@ -32,3 +32,4 @@
     dc = diff --cached
     ai = add -i
     rv = remote -v
+    re = remote set-url
