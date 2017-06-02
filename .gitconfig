@@ -31,3 +31,4 @@
     ca = "!f() { git add $1 && git ci; }; f"
     dc = diff --cached
     ai = add -i
+    rv = remote -v
