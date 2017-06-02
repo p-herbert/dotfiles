@@ -1,4 +1,9 @@
-# Vim Files
+# Directories #
+###############
+node_modules
+
+# Temporary Files #
+###################
 *~
 *.swp
 *.swo
@@ -37,5 +42,3 @@ ehthumbs.db
 Icon?
 Thumbs.db
 
-# Folders
-node_modules
