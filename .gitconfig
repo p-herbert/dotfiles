@@ -33,6 +33,7 @@
     dc = diff --cached
     ai = add -i
     a = "!f() { git status -s | cut -c4- | awk -v line="$1" 'NR==line {print}' | git add; }; f"
+    d = "!f() { git status -s | cut -c4- | awk -v line="$1" 'NR==line {print}' | git diff; }; f"
     rv = remote -v
     re = remote set-url
 
