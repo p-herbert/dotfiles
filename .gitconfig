@@ -36,4 +36,5 @@
     d = "!f() { git status -s | cut -c4- | git diff $(awk -v line="$1" 'NR==line {print}'); }; f"
     rv = remote -v
     re = remote set-url
+    ps = "!f() { num=${1-0}; git stash show -p stash@{$num}; }; f"
 
