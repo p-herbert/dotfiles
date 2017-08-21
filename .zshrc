@@ -82,6 +82,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+setopt aliases
+
 # Vim bindings
 bindkey -v
 bindkey -v '^?' backward-delete-char
