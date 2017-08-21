@@ -1,13 +1,15 @@
 [user]
-    name = p-herbert
-    email = pete@sunsama.com
+	name = p-herbert
+	email = pete@sunsama.com
 [core]
     autocrlf = input
     safecrlf = true
     editor = /usr/local/bin/vim
-    excludesfile = ~/.gitignore
+	excludesfile = ~/.gitignore
 [push]
     default = current
+[branch]
+    autoSetupMerge = always
 [alias]
     co = checkout
     ci = commit
@@ -40,7 +42,7 @@
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+	path = 
 [mergetool "sourcetree"]
 	cmd = /Users/PeterHerbert/Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
