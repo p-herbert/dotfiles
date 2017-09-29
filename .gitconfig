@@ -14,7 +14,7 @@
     co = checkout
     ci = commit
     st = status
-    ss = "!f() { git status -s | awk '{print NR""$0}'; }; f"
+    ss = "!f() { git status -s | nl; }; f"
     br = branch
     hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
     type = cat-file -t
