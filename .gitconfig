@@ -41,6 +41,7 @@
     rv = remote -v
     re = remote set-url
     ri = "!f() { num=${1-0}; git rebase --interactive HEAD~$num; }; f"
+    rc = rebase --continue
     hs = "!f() { num=${1-0}; git rev-parse HEAD~$num; }; f"
     ps = "!f() { num=${1-0}; git stash show -p stash@{$num}; }; f"
 
