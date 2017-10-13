@@ -53,3 +53,8 @@
 	trustExitCode = true
 [commit]
 	template = /Users/PeterHerbert/.stCommitMsg
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+[mergetool]
+	prompt = false
