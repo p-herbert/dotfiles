@@ -26,7 +26,7 @@
     ls = "!f() { num=${1-10}; git log --pretty=format:'%C(yellow)%h%Creset %Cblue%ad%Creset %Cgreen%aN%Creset %s' --abbrev-commit --date=short | head -$num | nl -v 0; }; f"
     rb = pull --rebase upstream master
     up = "!f() { git remote add upstream $1; }; f"
-    RESET = reset --hard HEAD~1
+    pop = reset --hard HEAD~1
     undo = reset HEAD^
     pm = push origin master
     pu = pull upstream master
