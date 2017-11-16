@@ -1,0 +1,14 @@
+# Options #
+###########
+--color
+--sort-files
+
+# File Types #
+##############
+--type-set=react=.jsx
+
+# Directories #
+###############
+--ignore-directory=node_modules
+--ignore-directory=.meteor
+
