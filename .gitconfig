@@ -32,7 +32,7 @@
     pu = pull upstream master
     po = push origin
     pl = pull --rebase
-    sh = "!f() { commit=${1-0}; git show HEAD~$commit; }; f"
+    sh = "!f() { num=${1-0}; num=$((num ? ++num : num)); git log --format=format:%H | head -$((++num)) | git show $(awk -v line="$num" 'NR==line {print}'); }; f"
     ca = "!f() { git add $1 && git ci; }; f"
     dc = diff --cached
     ai = add -i
