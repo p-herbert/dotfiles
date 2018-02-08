@@ -37,6 +37,7 @@
     dc = diff --cached
     ai = add -i
     a = "!f() { git status -s | cut -c4- | git add $(awk -v line="$1" 'NR==line {print}'); }; f"
+    e = "!f() { vim $(git status -s | cut -c4- | awk -v line="${1-1}" 'NR==line {print}'); }; f"
     d = "!f() { git status -s | cut -c4- | git diff $(awk -v line="$1" 'NR==line {print}'); }; f"
     u = "!f() { git status -s | cut -c4- | git reset HEAD $(awk -v line="$1" 'NR==line {print}'); }; f"
     rv = remote -v
