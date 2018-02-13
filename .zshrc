@@ -91,9 +91,6 @@ bindkey -v '^?' backward-delete-char
 bindkey -M vicmd v edit-command-line
 
 function zle-line-init zle-keymap-select {
-    RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
-    RPS2=$RPS1
-
     # change cursor shape in iTerm2
     case $KEYMAP in
         vicmd)      print -n -- "\E]50;CursorShape=0\C-G";;  # block cursor
