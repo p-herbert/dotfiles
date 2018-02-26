@@ -83,6 +83,9 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# 10ms for key sequences
+KEYTIMEOUT=1
+
 setopt aliases
 
 # Vim bindings
