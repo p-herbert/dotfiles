@@ -121,3 +121,4 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="/usr/local/opt/elasticsearch@2.4/bin:$PATH";
 export PATH="/usr/local/opt/python/libexec/bin:$PATH";
 export PATH="$PATH:/usr/local/sbin";
+export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc";
