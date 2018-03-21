@@ -6,6 +6,7 @@
 # File Types #
 ##############
 --type-set=react=.jsx
+--ignore-file=is:tags
 
 # Directories #
 ###############
