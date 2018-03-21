@@ -13,3 +13,5 @@
 --ignore-directory=node_modules
 --ignore-directory=.meteor
 --ignore-directory=dist
+--ignore-directory=bundle
+
