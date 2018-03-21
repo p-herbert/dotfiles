@@ -1,0 +1,12 @@
+# Options #
+###########
+--colors=line:none
+--colors=line:style:bold
+--sort-files
+--max-columns=150
+--smart-case
+
+# File Types #
+##############
+--type-add=react:*.jsx
+
