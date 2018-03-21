@@ -86,6 +86,8 @@ export EDITOR='vim'
 # 10ms for key sequences
 KEYTIMEOUT=1
 
+ulimit -n 2048
+
 setopt aliases
 
 # Vim bindings
