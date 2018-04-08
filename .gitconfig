@@ -4,7 +4,7 @@
 [core]
     autocrlf = input
     safecrlf = true
-    editor = /usr/local/bin/vim
+    editor = /usr/local/bin/nvim
     excludesfile = ~/.gitignore
 [push]
     default = current
