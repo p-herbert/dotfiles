@@ -123,3 +123,6 @@ export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc";
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/Cellar/terraform/0.11.5/bin/terraform terraform
