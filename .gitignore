@@ -2,6 +2,7 @@
 ###############
 node_modules
 .meteor
+.terraform
 
 # Temporary Files #
 ###################
@@ -17,6 +18,7 @@ node_modules
 *.exe
 *.o
 *.so
+*.tfplan
 
 # Packages #
 ############
