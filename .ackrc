@@ -16,4 +16,5 @@
 --ignore-directory=dist
 --ignore-directory=bundle
 --ignore-directory=.terraform
+--ignore-directory=__generated__
 
