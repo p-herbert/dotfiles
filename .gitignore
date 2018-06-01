@@ -3,6 +3,7 @@
 node_modules
 .meteor
 .terraform
+__generated__
 
 # Temporary Files #
 ###################
