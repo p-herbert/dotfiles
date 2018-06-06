@@ -6,6 +6,7 @@
 # File Types #
 ##############
 --type-set=react=.jsx
+--type-set=graphql=.graphql,.graphqls,.gql
 --ignore-file=is:tags
 --ignore-file=is:.tfplan
 
