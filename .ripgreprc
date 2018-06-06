@@ -5,6 +5,7 @@
 --sort-files
 --max-columns=150
 --smart-case
+--hidden
 
 # File Types #
 ##############
