@@ -48,7 +48,7 @@
     hs = "!f() { num=${1-0}; git rev-parse HEAD~$num; }; f"
     ps = "!f() { num=${1-0}; git stash show -p stash@{$num}; }; f"
     sa = "!f() { num=${1-0}; git stash apply stash@{$num}; }; f"
-    switch = branch -u
+    sw = branch -u
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
