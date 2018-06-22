@@ -12,6 +12,7 @@
     ],
     "loadEagerly": [
         "imports/**/*.js",
+        "imports/**/*.graphql",
         "snippets/**/*.js"
     ],
     "plugins": {
