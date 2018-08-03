@@ -12,6 +12,10 @@ __generated__
 *.swo
 .tern-port
 
+# Environment variables #
+#########################
+.env.example
+
 # Compiled source #
 ###################
 *.com
