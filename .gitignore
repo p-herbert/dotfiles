@@ -5,7 +5,7 @@ node_modules
 .terraform
 __generated__
 
-# Temporary Files #
+# Temporary files #
 ###################
 *~
 *.swp
@@ -37,7 +37,7 @@ __generated__
 *.tar
 *.zip
 
-# Logs and databases #
+# Logs and Databases #
 ######################
 *.log
 *.sql
