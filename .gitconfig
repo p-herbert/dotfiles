@@ -25,6 +25,7 @@
     lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
     lg3 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)(committed: %cD)%C(reset) %C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset)%n''          %C(dim white)- %an <%ae> %C(reset) %C(dim white)(committer: %cn <%ce>)%C(reset)'
     ls = "!f() { num=${1-10}; git log --pretty=format:'%C(yellow)%h%Creset %Cblue%ad%Creset %Cgreen%aN%Creset %s' --abbrev-commit --date=short | head -$num | nl -v 0; }; f"
+    lc = "!f() { num=${1-10}; git log --pretty=format:'%C(yellow)%h%Creset %Cblue%ad%Creset %Cgreen%aN%Creset %s' --abbrev-commit --date=short | head -$num; }; f"
     ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
     rb = pull --rebase upstream master
     up = "!f() { git remote add upstream $1; }; f"
