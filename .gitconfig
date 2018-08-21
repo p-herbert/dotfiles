@@ -55,12 +55,12 @@
     sw = branch -u
 
 [commit]
-	template = /Users/PeterHerbert/.stCommitMsg
+    template = /Users/PeterHerbert/.stCommitMsg
 [merge]
-	tool = vimdiff
-	conflictstyle = diff3
+    tool = vimdiff
+    conflictstyle = diff3
 [mergetool]
-	prompt = false
+    prompt = false
 [url "ssh://git@github.com/"]
     insteadOf = https://github.com/
 
