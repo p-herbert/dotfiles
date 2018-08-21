@@ -1,5 +1,6 @@
 [user]
     name = p-herbert
+    email = 11701411+p-herbert@users.noreply.github.com
 [core]
     autocrlf = input
     safecrlf = true
