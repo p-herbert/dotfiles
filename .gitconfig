@@ -55,12 +55,6 @@
     sa = "!f() { num=${1-0}; git stash apply stash@{$num}; }; f"
     sw = branch -u
 
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
-[mergetool "sourcetree"]
-	cmd = /Users/PeterHerbert/Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 [commit]
 	template = /Users/PeterHerbert/.stCommitMsg
 [merge]
