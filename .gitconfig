@@ -1,6 +1,5 @@
 [user]
     name = p-herbert
-    email = pete@sunsama.com
 [core]
     autocrlf = input
     safecrlf = true
