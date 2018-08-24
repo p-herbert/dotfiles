@@ -115,7 +115,6 @@ zle -N zle-keymap-select
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-export PATH="/usr/local/opt/elasticsearch@2.4/bin:$PATH";
 export PATH="/usr/local/bin:$PATH";
 export PATH="$PATH:/usr/local/sbin";
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc";
