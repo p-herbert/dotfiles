@@ -19,6 +19,7 @@
     },
     "globals": {
         "require": true,
+        "module": true,
         "process": true,
         "Buffer": true,
         "Assets": true,
