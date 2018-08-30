@@ -30,7 +30,8 @@
         "FS": true,
         "describe": true,
         "it": true,
-        "xit": true
+        "xit": true,
+        "CONFIG": true
     },
     "rules": {
         "linebreak-style": [ "warn", "unix" ],
