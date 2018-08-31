@@ -31,7 +31,8 @@
         "describe": true,
         "it": true,
         "xit": true,
-        "CONFIG": true
+        "CONFIG": true,
+        "__dirname": true
     },
     "rules": {
         "linebreak-style": [ "warn", "unix" ],
