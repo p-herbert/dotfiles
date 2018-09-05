@@ -26,7 +26,6 @@
         "Meteor": true,
         "Template": true,
         "PageContext": true,
-        "google": true,
         "FS": true,
         "describe": true,
         "it": true,
