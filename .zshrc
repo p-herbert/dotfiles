@@ -117,6 +117,7 @@ source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export PATH="/usr/local/bin:$PATH";
 export PATH="$PATH:/usr/local/sbin";
+export PATH="$PATH:$HOME/.npm/bin";
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc";
 
 export NVM_DIR="$HOME/.nvm"
