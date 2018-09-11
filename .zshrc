@@ -113,7 +113,7 @@ zle -N zle-line-init
 zle -N zle-line-finish
 zle -N zle-keymap-select
 
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export PATH="/usr/local/bin:$PATH";
 export PATH="$PATH:/usr/local/sbin";
