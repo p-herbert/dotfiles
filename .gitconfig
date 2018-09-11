@@ -4,7 +4,6 @@
 [core]
     autocrlf = input
     safecrlf = true
-    editor = /usr/local/bin/nvim
     excludesfile = ~/.gitignore
 [push]
     default = current
@@ -55,8 +54,6 @@
     sa = "!f() { num=${1-0}; git stash apply stash@{$num}; }; f"
     sw = branch -u
 
-[commit]
-    template = /Users/PeterHerbert/.stCommitMsg
 [merge]
     tool = vimdiff
     conflictstyle = diff3
