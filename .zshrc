@@ -60,8 +60,6 @@ export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc";
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
-autoload -U +X bashcompinit && bashcompinit
-
 # Add zsh highlighting
 source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
