@@ -47,9 +47,6 @@ zle -N zle-line-init
 zle -N zle-line-finish
 zle -N zle-keymap-select
 
-# Add zsh highlighting
-source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 # Add paths
 export PATH=$(getconf PATH);
 export PATH="$PATH:/usr/local/bin";
@@ -61,4 +58,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 autoload -U +X bashcompinit && bashcompinit
+
+# Add zsh highlighting
+source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
