@@ -19,8 +19,10 @@ export EDITOR='nvim'
 # 10ms for key sequences
 KEYTIMEOUT=1
 
+# Set maximum number of open file descriptors
 ulimit -n 2048
 
+# Expand aliases
 setopt aliases
 
 # Vim bindings
@@ -54,6 +56,7 @@ export PATH="$PATH:/usr/local/sbin";
 export PATH="$PATH:$HOME/.npm/bin";
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc";
 
+# Configure nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
