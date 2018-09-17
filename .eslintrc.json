@@ -1,7 +1,8 @@
 {
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+        "node": true
     },
     "parser": "babel-eslint",
     "plugins": [
@@ -55,6 +56,18 @@
         "no-useless-concat": "warn",
         "comma-dangle": ["warn", "always-multiline"],
         "object-shorthand": ["warn", "always"],
-        "curly": "warn"
+        "curly": "warn",
+        "eol-last": 2,
+        "no-multiple-empty-lines": [
+            "error", {
+                "max": 2,
+                "maxEOF": 1
+            }
+        ],
+        "no-plusplus": [
+            "error", {
+                "allowForLoopAfterthoughts": true
+            }
+        ]
     }
 }
