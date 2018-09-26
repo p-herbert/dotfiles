@@ -51,8 +51,8 @@ zle -N zle-keymap-select
 
 # Add paths
 export PATH=$(getconf PATH);
-export PATH="$PATH:/usr/local/bin";
-export PATH="$PATH:/usr/local/sbin";
+export PATH="/usr/local/bin:$PATH";
+export PATH="/usr/local/sbin:$PATH";
 export PATH="$PATH:$HOME/.npm/bin";
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc";
 
