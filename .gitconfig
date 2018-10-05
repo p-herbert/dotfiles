@@ -39,10 +39,10 @@
     ca = "!f() { git add $1 && git ci; }; f"
     dc = diff --cached
     ai = add -i
-    a = "!f() { git status -s | cut -c4- | git add $(awk -v line="$1" 'NR==line {print}'); }; f"
-    e = "!f() { $EDITOR $(git status -s | cut -c4- | awk -v line="${1-1}" 'NR==line {print}'); }; f"
-    d = "!f() { git status -s | cut -c4- | git diff $(awk -v line="$1" 'NR==line {print}'); }; f"
-    u = "!f() { git status -s | cut -c4- | git reset HEAD $(awk -v line="$1" 'NR==line {print}'); }; f"
+    a = "!f() { git add $(git status -s | cut -c4- | awk -v line=$1 'NR==line'); }; f"
+    e = "!f() { $EDITOR $(git status -s | cut -c4- | awk -v line=${1-1} 'NR==line'); }; f"
+    d = "!f() { git diff $(git status -s | cut -c4- | awk -v line=$1 'NR==line'); }; f"
+    u = "!f() { git reset HEAD $(git status -s | cut -c4- | awk -v line=$1 'NR==line'); }; f"
     s = stash
     sp = stash pop
     rv = remote -v
