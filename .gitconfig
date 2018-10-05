@@ -18,7 +18,7 @@
     bi = bisect
     type = cat-file -t
     dump = cat-file -p
-    lg = log --graph --abbrev-commit --decorate --date=short --all --pretty=format:'%C(yellow)%h%Creset %Cblue%ad%Creset %Cgreen%aN%Creset %s %an%C(reset)%C(bold yellow)%d%C(reset)'
+    lg = log --graph --abbrev-commit --decorate --date=short --all --pretty=format:'%C(yellow)%h%Creset %Cblue%ad%Creset %Cgreen%aN%Creset %s%C(bold yellow)%d%C(reset)'
     ls = "!f() { num=${1-10}; git log --pretty=format:'%C(yellow)%h%Creset %Cblue%ad%Creset %Cgreen%aN%Creset %s' --abbrev-commit --date=short | head -$num | nl -v 0; }; f"
     lc = "!f() { num=${1-10}; git log --pretty=format:'%C(yellow)%h%Creset %Cblue%ad%Creset %Cgreen%aN%Creset %s' --abbrev-commit --date=short | head -$num; }; f"
     ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
