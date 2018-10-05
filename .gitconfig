@@ -30,7 +30,7 @@
     pu = pull upstream master
     po = push origin
     pl = pull --rebase
-    sh = "!f() { num=${1-0}; num=$((num ? ++num : num)); git log --format=format:%H | head -$((++num)) | git show $(awk -v line="$num" 'NR==line {print}'); }; f"
+    sh = "!f() { git show $(git rev-parse HEAD~$1); }; f"
     f = "!f() { regex=${1}; file=${2}; git log -p -G"$regex" $file; }; f"
     ca = "!f() { git add $1 && git ci; }; f"
     dc = diff --cached
