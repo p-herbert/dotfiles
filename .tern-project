@@ -7,8 +7,7 @@
         "underscore"
     ],
     "dontLoad": [
-        "node_modules/**",
-        ".meteor"
+        "node_modules/**"
     ],
     "plugins": {
         "node": {},
