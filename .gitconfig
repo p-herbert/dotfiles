@@ -41,7 +41,7 @@
     ms = merge --skip
     ##########
     pl = pull
-    pr = pull --rebase
+    plr = pull --rebase
     plum = pull upstream master
     prum = pull --rebase upstream master
     ##########
