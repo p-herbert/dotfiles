@@ -51,8 +51,8 @@
     ##########
     s = stash
     sa = "!f() { num=${1-0}; git stash apply stash@{$num}; }; f"
-    sw = "!f() { num=${1-0}; git stash show -p stash@{$num}; }; f"
     sp = stash pop
+    sw = "!f() { num=${1-0}; git stash show -p stash@{$num}; }; f"
     ##########
     ss = "!f() { git status -s | nl; }; f"
     st = status
