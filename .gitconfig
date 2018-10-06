@@ -12,8 +12,8 @@
 [alias]
     ##########
     a = "!f() { git add $(git status -s | cut -c4- | awk -v line=$1 'NR==line'); }; f"
+    ac = "!f() { git add $1 && git ci; }; f"
     ai = add -i
-    ca = "!f() { git add $1 && git ci; }; f"
     ##########
     bi = bisect
     ##########
@@ -28,42 +28,51 @@
     ci = commit
     ##########
     d = "!f() { git diff $(git status -s | cut -c4- | awk -v line=$1 'NR==line'); }; f"
+    di = diff
     dc = diff --cached
     ##########
     f = "!f() { regex=${1}; file=${2}; git log -p -G"$regex" $file; }; f"
-    lc = "!f() { num=${1-10}; git log --pretty=format:'%C(yellow)%h%Creset %Cblue%ad%Creset %Cgreen%aN%Creset %s' --abbrev-commit --date=short | head -$num; }; f"
     ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
     lg = log --graph --abbrev-commit --decorate --date=short --all --pretty=format:'%C(yellow)%h%Creset %Cblue%ad%Creset %Cgreen%aN%Creset %s%C(bold yellow)%d%C(reset)'
-    ls = "!f() { num=${1-10}; git log --pretty=format:'%C(yellow)%h%Creset %Cblue%ad%Creset %Cgreen%aN%Creset %s' --abbrev-commit --date=short | head -$num | nl -v 0; }; f"
     ##########
-    pl = pull --rebase
-    pu = pull upstream master
-    rb = pull --rebase upstream master
+    pl = pull
+    pr = pull --rebase
+    plum = pull upstream master
+    prum = pull --rebase upstream master
     ##########
-    pm = push origin master
-    po = push origin
+    ps = push
+    pso = push origin
+    psom = push origin master
     ##########
     s = stash
-    ps = "!f() { num=${1-0}; git stash show -p stash@{$num}; }; f"
     sa = "!f() { num=${1-0}; git stash apply stash@{$num}; }; f"
+    sw = "!f() { num=${1-0}; git stash show -p stash@{$num}; }; f"
     sp = stash pop
     ##########
     ss = "!f() { git status -s | nl; }; f"
     st = status
     ##########
+    rb = rebase
     rc = rebase --continue
     ri = "!f() { num=${1-0}; git rebase --interactive HEAD~$num; }; f"
     ##########
-    re = remote set-url
+    r = remote
+    ra = remote add
+    rr = remote rm
+    rs = remote set-url
     rv = remote -v
-    up = "!f() { git remote add upstream $1; }; f"
     ##########
-    POP = reset --soft HEAD~1
-    u = "!f() { git reset HEAD $(git status -s | cut -c4- | awk -v line=$1 'NR==line'); }; f"
-    undo = reset HEAD^
+    re = reset
+    rh = reset HEAD
+    reh = reset --hard HEAD
+    res = reset --soft HEAD
+    undo = "!f() { git reset HEAD $(git status -s | cut -c4- | awk -v line=$1 'NR==line'); }; f"
     ##########
-    sh = "!f() { git show $(git rev-parse HEAD~$1); }; f"
+    h = rev-parse HEAD
     hs = "!f() { num=${1-0}; git rev-parse HEAD~$num; }; f"
+    ##########
+    sw = show
+    swn = "!f() { git show $(git rev-parse HEAD~$1); }; f"
     ##########
     e = "!f() { $EDITOR $(git status -s | cut -c4- | awk -v line=${1-1} 'NR==line'); }; f"
     ##########
