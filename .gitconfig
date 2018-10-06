@@ -10,45 +10,63 @@
 [branch]
     autoSetupMerge = always
 [alias]
-    co = checkout
-    ci = commit
-    st = status
-    ss = "!f() { git status -s | nl; }; f"
-    br = branch
+    ##########
+    a = "!f() { git add $(git status -s | cut -c4- | awk -v line=$1 'NR==line'); }; f"
+    ai = add -i
+    ca = "!f() { git add $1 && git ci; }; f"
+    ##########
     bi = bisect
-    type = cat-file -t
+    ##########
+    br = branch
+    sw = branch -u
+    ##########
     dump = cat-file -p
-    lg = log --graph --abbrev-commit --decorate --date=short --all --pretty=format:'%C(yellow)%h%Creset %Cblue%ad%Creset %Cgreen%aN%Creset %s%C(bold yellow)%d%C(reset)'
-    ls = "!f() { num=${1-10}; git log --pretty=format:'%C(yellow)%h%Creset %Cblue%ad%Creset %Cgreen%aN%Creset %s' --abbrev-commit --date=short | head -$num | nl -v 0; }; f"
+    type = cat-file -t
+    ##########
+    co = checkout
+    ##########
+    ci = commit
+    ##########
+    d = "!f() { git diff $(git status -s | cut -c4- | awk -v line=$1 'NR==line'); }; f"
+    dc = diff --cached
+    ##########
+    f = "!f() { regex=${1}; file=${2}; git log -p -G"$regex" $file; }; f"
     lc = "!f() { num=${1-10}; git log --pretty=format:'%C(yellow)%h%Creset %Cblue%ad%Creset %Cgreen%aN%Creset %s' --abbrev-commit --date=short | head -$num; }; f"
     ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
-    rb = pull --rebase upstream master
-    up = "!f() { git remote add upstream $1; }; f"
-    POP = reset --soft HEAD~1
-    undo = reset HEAD^
-    pm = push origin master
-    pu = pull upstream master
-    po = push origin
+    lg = log --graph --abbrev-commit --decorate --date=short --all --pretty=format:'%C(yellow)%h%Creset %Cblue%ad%Creset %Cgreen%aN%Creset %s%C(bold yellow)%d%C(reset)'
+    ls = "!f() { num=${1-10}; git log --pretty=format:'%C(yellow)%h%Creset %Cblue%ad%Creset %Cgreen%aN%Creset %s' --abbrev-commit --date=short | head -$num | nl -v 0; }; f"
+    ##########
     pl = pull --rebase
-    sh = "!f() { git show $(git rev-parse HEAD~$1); }; f"
-    f = "!f() { regex=${1}; file=${2}; git log -p -G"$regex" $file; }; f"
-    ca = "!f() { git add $1 && git ci; }; f"
-    dc = diff --cached
-    ai = add -i
-    a = "!f() { git add $(git status -s | cut -c4- | awk -v line=$1 'NR==line'); }; f"
-    e = "!f() { $EDITOR $(git status -s | cut -c4- | awk -v line=${1-1} 'NR==line'); }; f"
-    d = "!f() { git diff $(git status -s | cut -c4- | awk -v line=$1 'NR==line'); }; f"
-    u = "!f() { git reset HEAD $(git status -s | cut -c4- | awk -v line=$1 'NR==line'); }; f"
+    pu = pull upstream master
+    rb = pull --rebase upstream master
+    ##########
+    pm = push origin master
+    po = push origin
+    ##########
     s = stash
-    sp = stash pop
-    rv = remote -v
-    re = remote set-url
-    ri = "!f() { num=${1-0}; git rebase --interactive HEAD~$num; }; f"
-    rc = rebase --continue
-    hs = "!f() { num=${1-0}; git rev-parse HEAD~$num; }; f"
     ps = "!f() { num=${1-0}; git stash show -p stash@{$num}; }; f"
     sa = "!f() { num=${1-0}; git stash apply stash@{$num}; }; f"
-    sw = branch -u
+    sp = stash pop
+    ##########
+    ss = "!f() { git status -s | nl; }; f"
+    st = status
+    ##########
+    rc = rebase --continue
+    ri = "!f() { num=${1-0}; git rebase --interactive HEAD~$num; }; f"
+    ##########
+    re = remote set-url
+    rv = remote -v
+    up = "!f() { git remote add upstream $1; }; f"
+    ##########
+    POP = reset --soft HEAD~1
+    u = "!f() { git reset HEAD $(git status -s | cut -c4- | awk -v line=$1 'NR==line'); }; f"
+    undo = reset HEAD^
+    ##########
+    sh = "!f() { git show $(git rev-parse HEAD~$1); }; f"
+    hs = "!f() { num=${1-0}; git rev-parse HEAD~$num; }; f"
+    ##########
+    e = "!f() { $EDITOR $(git status -s | cut -c4- | awk -v line=${1-1} 'NR==line'); }; f"
+    ##########
 [merge]
     tool = vimdiff
     conflictstyle = diff3
