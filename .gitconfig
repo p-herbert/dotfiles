@@ -58,8 +58,10 @@
     st = status
     ##########
     rb = rebase
-    rc = rebase --continue
-    ri = "!f() { num=${1-0}; git rebase --interactive HEAD~$num; }; f"
+    rba = rebase --abort
+    rbc = rebase --continue
+    rbi = "!f() { num=${1-0}; git rebase --interactive HEAD~$num; }; f"
+    rbs = rebase --skip
     ##########
     r = remote
     ra = remote add
