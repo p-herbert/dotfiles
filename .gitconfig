@@ -9,6 +9,8 @@
     default = current
 [branch]
     autoSetupMerge = always
+[color]
+    ui = auto
 [alias]
     ##########
     a = "!f() { git add $(git status -s | cut -c4- | awk -v line=$1 'NR==line'); }; f"
