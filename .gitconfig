@@ -49,7 +49,6 @@
     ps = "!f() { num=${1-0}; git stash show -p stash@{$num}; }; f"
     sa = "!f() { num=${1-0}; git stash apply stash@{$num}; }; f"
     sw = branch -u
-
 [merge]
     tool = vimdiff
     conflictstyle = diff3
