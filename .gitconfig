@@ -18,7 +18,7 @@
     bi = bisect
     ##########
     br = branch
-    sw = branch -u
+    bu = branch -u
     ##########
     dump = cat-file -p
     type = cat-file -t
@@ -71,8 +71,8 @@
     h = rev-parse HEAD
     hs = "!f() { num=${1-0}; git rev-parse HEAD~$num; }; f"
     ##########
-    sw = show
-    swn = "!f() { git show $(git rev-parse HEAD~$1); }; f"
+    w = show
+    wn = "!f() { git show $(git rev-parse HEAD~$1); }; f"
     ##########
     e = "!f() { $EDITOR $(git status -s | cut -c4- | awk -v line=${1-1} 'NR==line'); }; f"
     ##########
