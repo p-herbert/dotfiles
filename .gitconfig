@@ -11,6 +11,13 @@
     autoSetupMerge = always
 [color]
     ui = auto
+[merge]
+    tool = vimdiff
+    conflictstyle = diff3
+[mergetool]
+    prompt = false
+[url "ssh://git@github.com/"]
+    insteadOf = https://github.com/
 [alias]
     ##########
     a = "!f() { git add $(git status -s | cut -c4- | awk -v line=$1 'NR==line'); }; f"
@@ -85,11 +92,4 @@
     ##########
     e = "!f() { $EDITOR $(git status -s | cut -c4- | awk -v line=${1-1} 'NR==line'); }; f"
     ##########
-[merge]
-    tool = vimdiff
-    conflictstyle = diff3
-[mergetool]
-    prompt = false
-[url "ssh://git@github.com/"]
-    insteadOf = https://github.com/
 
