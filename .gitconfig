@@ -36,6 +36,9 @@
     lg = log --graph --abbrev-commit --decorate --date=short --all --pretty=format:'%C(yellow)%h%Creset %Cblue%ad%Creset %Cgreen%aN%Creset %s%C(bold yellow)%d%C(reset)'
     ##########
     m = merge
+    ma = merge --abort
+    mc = merge --continue
+    ms = merge --skip
     ##########
     pl = pull
     pr = pull --rebase
