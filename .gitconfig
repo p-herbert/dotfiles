@@ -88,7 +88,7 @@
     hs = "!f() { num=${1-0}; git rev-parse HEAD~$num; }; f"
     ##########
     w = show
-    wn = "!f() { git show $(git rev-parse HEAD~$1); }; f"
+    wn = "!f() { num=${1-0}; git show $(git rev-parse HEAD~$num); }; f"
     ##########
     e = "!f() { $EDITOR $(git status -s | cut -c4- | awk -v line=${1-1} 'NR==line'); }; f"
     ##########
