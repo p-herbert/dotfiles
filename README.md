@@ -1,5 +1,7 @@
 # README
 
+These are my personal dotfiles.
+
 # Installation
 
 1. Clone the repository
