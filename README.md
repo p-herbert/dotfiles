@@ -6,7 +6,9 @@ These are my personal dotfiles.
 
 1. Clone the repository
 
-    git clone https://github.com/p-herbert/dotfiles.git $HOME/.dotfiles
+~~~bash
+git clone https://github.com/p-herbert/dotfiles.git $HOME/.dotfiles
+~~~
 
 2. Create a symbolic link from the repository `.dotfiles` to the home directory
 
