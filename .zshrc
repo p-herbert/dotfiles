@@ -51,6 +51,7 @@ zle -N zle-keymap-select
 
 # Add paths
 export PATH=$(getconf PATH);
+export PATH="/sbin:$PATH";
 export PATH="/usr/local/bin:$PATH";
 export PATH="/usr/local/sbin:$PATH";
 export PATH="$PATH:$HOME/.npm/bin";
