@@ -38,6 +38,8 @@
     ##########
     cl = clone
     ##########
+    cp = cherry-pick
+    ##########
     d = "!f() { git diff $(git status -s | cut -c4- | awk -v line=$1 'NR==line'); }; f"
     di = diff
     dc = diff --cached
