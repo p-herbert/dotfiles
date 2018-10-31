@@ -51,6 +51,7 @@
     m = merge
     ma = merge --abort
     mc = merge --continue
+    mm = merge master
     ms = merge --skip
     ##########
     pl = pull
