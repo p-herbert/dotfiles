@@ -33,6 +33,7 @@
     type = cat-file -t
     ##########
     co = checkout
+    com = checkout master
     ##########
     ci = commit
     ##########
