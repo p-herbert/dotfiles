@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="ys"
 
 # Custom folder path
-ZSH_CUSTOM=$HOME/.zsh_custom
+ZSH_CUSTOM=$HOME/.zsh-custom
 
 # Plugins to load
 plugins=(git node npm nvm gnu-utils)
