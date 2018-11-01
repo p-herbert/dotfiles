@@ -4,7 +4,7 @@
 [core]
     autocrlf = input
     safecrlf = true
-    excludesfile = ~/.gitignore
+    excludesfile = $HOME/.gitignore
 [push]
     default = current
 [branch]
