@@ -18,4 +18,5 @@
 --ignore-directory=bundle
 --ignore-directory=.terraform
 --ignore-directory=__generated__
+--ignore-directory=build
 

@@ -5,6 +5,7 @@ node_modules
 .terraform
 __generated__
 dist
+build
 
 # Temporary files #
 ###################
