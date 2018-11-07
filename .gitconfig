@@ -13,7 +13,6 @@
     ui = auto
 [merge]
     tool = vimdiff
-    conflictstyle = diff3
 [mergetool]
     prompt = false
 [url "ssh://git@github.com/"]
