@@ -27,6 +27,7 @@
     ##########
     br = branch
     bu = branch -u
+    brd = branch -d
     ##########
     dump = cat-file -p
     type = cat-file -t
