@@ -62,7 +62,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # Configure Travis-CI
-[ -f /Users/pherbert/.travis/travis.sh ] && source /Users/pherbert/.travis/travis.sh
+[ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
 
 # Add zsh highlighting
 source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
