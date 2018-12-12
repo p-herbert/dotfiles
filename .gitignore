@@ -6,6 +6,7 @@ node_modules
 __generated__
 dist
 build
+amplify
 
 # Temporary files #
 ###################

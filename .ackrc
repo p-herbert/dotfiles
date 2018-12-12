@@ -19,4 +19,5 @@
 --ignore-directory=.terraform
 --ignore-directory=__generated__
 --ignore-directory=build
+--ignore-directory=amplify
 

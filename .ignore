@@ -6,4 +6,5 @@ tags
 .tfplan
 __generated__
 build
+amplify
 

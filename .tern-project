@@ -7,7 +7,8 @@
         "underscore"
     ],
     "dontLoad": [
-        "node_modules/**"
+        "node_modules/**",
+        "amplify/**"
     ],
     "plugins": {
         "node": {},
