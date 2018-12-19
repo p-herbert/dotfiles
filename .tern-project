@@ -8,7 +8,9 @@
     ],
     "dontLoad": [
         "node_modules/**",
-        "amplify/**"
+        "amplify/**",
+        "dist/**",
+        "build/**"
     ],
     "plugins": {
         "node": {},
