@@ -7,6 +7,9 @@ ZSH_THEME="ys"
 # Custom folder path
 ZSH_CUSTOM=$HOME/.zsh-custom
 
+# Check directory exists or create it
+[ ! -d $HOME/.z ] || mkdir -p $HOME/.z
+
 # Plugins to load
 plugins=(git node npm nvm gnu-utils z)
 
