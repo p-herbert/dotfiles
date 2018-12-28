@@ -8,7 +8,7 @@ ZSH_THEME="ys"
 ZSH_CUSTOM=$HOME/.zsh-custom
 
 # Plugins to load
-plugins=(git node npm nvm gnu-utils)
+plugins=(git node npm nvm gnu-utils z)
 
 # User configuration
 source $ZSH/oh-my-zsh.sh
