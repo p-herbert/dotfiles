@@ -20,4 +20,5 @@
 --ignore-directory=__generated__
 --ignore-directory=build
 --ignore-directory=amplify
+--ignore-directory=__data__
 
