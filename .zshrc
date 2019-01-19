@@ -10,6 +10,9 @@ ZSH_CUSTOM=$HOME/.zsh-custom
 # Set data file
 export _Z_DATA=$HOME/.z
 
+# Set pyenv directory
+export PYENV_ROOT=$HOME/.pyenv
+
 # Check file exists or create it
 [ -f $_Z_DATA ] || touch $_Z_DATA
 
@@ -61,6 +64,7 @@ export PATH="/sbin:$PATH";
 export PATH="/usr/local/bin:$PATH";
 export PATH="/usr/local/sbin:$PATH";
 export PATH="$PATH:$HOME/.npm/bin";
+export PATH="$PYENV_ROOT/bin:$PATH";
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc";
 
 # Configure nvm
@@ -72,4 +76,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # Add zsh highlighting
 source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Init pyenv
+eval "$(pyenv init -)"
 

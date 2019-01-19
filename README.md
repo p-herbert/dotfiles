@@ -54,9 +54,16 @@ These are my personal dotfiles.
     nvm install node
     ~~~
 
+8. Install [pyenv]
+
+    ~~~bash
+    git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
+    ~~~
+
 [zsh]: https://www.zsh.org/
 [oh-my-zsh]: https://ohmyz.sh/
 [zsh-syntax-highlighting]: https://github.com/zsh-users/zsh-syntax-highlighting
 [nvm]: https://github.com/creationix/nvm
 [node]: https://nodejs.org/en/
+[pyenv]: https://github.com/pyenv/pyenv
 
