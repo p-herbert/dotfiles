@@ -88,9 +88,9 @@
     rv = remote -v
     ##########
     re = reset
-    rh = reset HEAD
-    reh = reset --hard HEAD
-    res = reset --soft HEAD
+    rh = reset HEAD^
+    reh = reset --hard HEAD^
+    res = reset --soft HEAD^
     undo = "!f() { git reset HEAD $(git status -s | cut -c4- | awk -v line=$1 'NR==line'); }; f"
     ##########
     h = rev-parse HEAD
