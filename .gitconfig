@@ -25,6 +25,7 @@
     ##########
     bi = bisect
     ##########
+    bm = branch -m
     br = branch
     bu = branch -u
     brd = branch -d
