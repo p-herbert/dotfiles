@@ -20,6 +20,7 @@
 [alias]
     ##########
     a = "!f() { git add $(git status -s | cut -c4- | awk -v line=$1 'NR==line'); }; f"
+    aa = add .
     ac = "!f() { git add $1 && git ci; }; f"
     ai = add -i
     ##########
