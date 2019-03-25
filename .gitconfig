@@ -88,6 +88,7 @@
     rr = remote rm
     rs = remote set-url
     rv = remote -v
+    rw = remote show
     ##########
     re = reset
     rh = reset HEAD^
