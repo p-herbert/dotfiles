@@ -48,6 +48,7 @@
     d = "!f() { git diff $(git status -s | cut -c4- | awk -v line=$1 'NR==line'); }; f"
     di = diff
     dc = diff --cached
+    ds = diff --stat
     ##########
     f = "!f() { regex=${1}; file=${2}; git log -p -G"$regex" $file; }; f"
     ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
