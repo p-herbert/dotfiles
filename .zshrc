@@ -65,6 +65,7 @@ export PATH="/usr/local/bin:$PATH";
 export PATH="/usr/local/sbin:$PATH";
 export PATH="$PATH:$HOME/.npm/bin";
 export PATH="$PYENV_ROOT/bin:$PATH";
+export PATH="$HOME/.local/bin:$PATH";
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc";
 
 # Configure nvm
