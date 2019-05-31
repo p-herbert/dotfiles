@@ -67,6 +67,7 @@
     ##########
     ps = push
     pso = push origin
+    pst = push --tags
     psom = push origin master
     ##########
     s = stash
