@@ -5,7 +5,9 @@
         "node_modules/**",
         "amplify/**",
         "dist/**",
-        "build/**"
+        "build/**",
+        "tmp/**",
+        "patches/**"
     ],
     "plugins": {
         "node": {},

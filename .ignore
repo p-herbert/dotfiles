@@ -8,4 +8,6 @@ __generated__
 build
 amplify
 __data__
+tmp
+patches
 

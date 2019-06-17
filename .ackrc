@@ -21,4 +21,6 @@
 --ignore-directory=build
 --ignore-directory=amplify
 --ignore-directory=__data__
+--ignore-directory=tmp
+--ignore-directory=patches
 
