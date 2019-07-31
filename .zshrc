@@ -67,6 +67,7 @@ export PATH="$PATH:$HOME/.npm/bin";
 export PATH="$PYENV_ROOT/bin:$PATH";
 export PATH="$HOME/.local/bin:$PATH";
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc";
+export PATH=$PATH:~/.kube/plugins/jordanwilson230
 
 # Configure nvm
 export NVM_DIR="$HOME/.nvm"
