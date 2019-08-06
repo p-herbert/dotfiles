@@ -60,10 +60,20 @@ These are my personal dotfiles.
     git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
     ~~~
 
+9. Install [kubectl-plugins]
+
+    ~~~bash
+    git clone https://github.com/jordanwilson230/kubectl-plugins.git
+    cd kubectl-plugins
+    ./install-plugins.sh
+    source ~/.bash_profile
+    ~~~
+
 [zsh]: https://www.zsh.org/
 [oh-my-zsh]: https://ohmyz.sh/
 [zsh-syntax-highlighting]: https://github.com/zsh-users/zsh-syntax-highlighting
 [nvm]: https://github.com/creationix/nvm
 [node]: https://nodejs.org/en/
 [pyenv]: https://github.com/pyenv/pyenv
+[kubectl-plugins]: https://github.com/jordanwilson230/kubectl-plugins
 
