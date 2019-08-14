@@ -68,6 +68,11 @@ export PATH="$PYENV_ROOT/bin:$PATH";
 export PATH="$HOME/.local/bin:$PATH";
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc";
 
+# Add brew version of ruby to path
+if [[ "$(uname -s)" == 'Darwin' && -x "$(command -v bash)" ]] ; then
+    export PATH="$(brew --prefix ruby)/bin:$PATH"
+fi
+
 # Configure nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
