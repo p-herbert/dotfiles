@@ -2,6 +2,30 @@
 
 These are my personal dotfiles.
 
+# Pre-installation
+
+## macOS
+
+1. Install [brew]
+
+	~~~bash
+	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	~~~
+
+2. Install packages
+
+	~~~bash
+	brew install ack ripgrep ctags python python@2 shellcheck
+	~~~
+
+# Ubuntu
+
+1. Install packages
+
+	~~~bash
+	sudo apt-get install ack ripgrep ctags shellcheck
+	~~~
+
 # Installation
 
 1. Clone the repository
@@ -18,7 +42,7 @@ These are my personal dotfiles.
 
 3. Install [zsh]
 
-    ## MacOS
+    ## macOS
     ~~~bash
     brew install zsh zsh-completions
     sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
@@ -66,4 +90,5 @@ These are my personal dotfiles.
 [nvm]: https://github.com/creationix/nvm
 [node]: https://nodejs.org/en/
 [pyenv]: https://github.com/pyenv/pyenv
+[brew]: https://brew.sh/
 
