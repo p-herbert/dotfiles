@@ -71,6 +71,7 @@ export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc";
 # Add brew version of ruby to path
 if [[ "$(uname -s)" == 'Darwin' && -x "$(command -v bash)" ]] ; then
     export PATH="$(brew --prefix ruby)/bin:$PATH"
+    export PATH="$(gem environment gemdir)/bin:$PATH"
 fi
 
 # Configure nvm
