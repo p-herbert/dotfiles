@@ -3,6 +3,7 @@
 node_modules
 .meteor
 .terraform
+.serverless
 __generated__
 dist
 build
