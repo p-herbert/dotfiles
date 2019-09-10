@@ -1,6 +1,6 @@
 [user]
     name = p-herbert
-    email = 11701411+p-herbert@users.noreply.github.com
+    email = 4589161-p-herbert@users.noreply.gitlab.com
 [core]
     autocrlf = input
     safecrlf = true
@@ -16,8 +16,8 @@
     tool = vimdiff
 [mergetool]
     prompt = false
-[url "ssh://git@github.com/"]
-    insteadOf = https://github.com/
+[url "ssh://git@gitlab.com/"]
+    insteadOf = https://gitlab.com/
 [alias]
     ##########
     a = "!f() { git add $(git status -s | cut -c4- | awk -v line=$1 'NR==line'); }; f"
