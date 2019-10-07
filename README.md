@@ -78,7 +78,13 @@ These are my personal dotfiles.
     nvm install node
     ~~~
 
-8. Install [pyenv]
+8. Install [diff-so-fancy]
+
+    ~~~bash
+    npm i -g diff-so-fancy
+    ~~~
+
+9. Install [pyenv]
 
     ~~~bash
     git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
@@ -91,4 +97,5 @@ These are my personal dotfiles.
 [node]: https://nodejs.org/en/
 [pyenv]: https://github.com/pyenv/pyenv
 [brew]: https://brew.sh/
+[diff-so-fancy]: https://www.npmjs.com/package/diff-so-fancy
 

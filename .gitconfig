@@ -5,6 +5,7 @@
     autocrlf = input
     safecrlf = true
     excludesfile = $HOME/.gitignore
+    pager = diff-so-fancy | less --tabs=4 -RFX
 [push]
     default = current
     followTags = true
