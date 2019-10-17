@@ -21,7 +21,7 @@
     insteadOf = https://github.com/
 [url "ssh://git@gitlab.com/"]
     insteadOf = https://gitlab.com/
-[includeIf "gitdir:~/Documents/Development"]
+[includeIf "gitdir:~/Documents/Development/point-*"]
     path = $HOME/.gitconfig.gitlab
 [alias]
     ##########
