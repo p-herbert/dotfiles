@@ -20,7 +20,7 @@
 [url "ssh://git@github.com/"]
     insteadOf = https://github.com/
 [includeIf "gitdir:~/Documents/Development"]
-    path = .gitconfig.gitlab
+    path = $HOME/.gitconfig.gitlab
 [alias]
     ##########
     a = "!f() { git add $(git status -s | cut -c4- | awk -v line=$1 'NR==line'); }; f"
