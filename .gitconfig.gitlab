@@ -1,4 +1,2 @@
 [user]
     email = 4589161-p-herbert@users.noreply.gitlab.com
-[url "ssh://git@gitlab.com/"]
-    insteadOf = https://gitlab.com/
