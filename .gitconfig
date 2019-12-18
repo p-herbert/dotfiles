@@ -75,6 +75,7 @@
     pso = push origin
     pst = push --tags
     psom = push origin master
+    psot = push origin --tags
     ##########
     s = stash
     sa = "!f() { num=${1-0}; git stash apply stash@{$num}; }; f"
