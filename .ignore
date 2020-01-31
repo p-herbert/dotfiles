@@ -10,4 +10,5 @@ amplify
 __data__
 tmp
 patches
+.serverless
 

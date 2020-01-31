@@ -23,4 +23,5 @@
 --ignore-directory=__data__
 --ignore-directory=tmp
 --ignore-directory=patches
+--ignore-directory=.serverless
 
