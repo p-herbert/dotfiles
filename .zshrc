@@ -66,6 +66,7 @@ export PATH="/usr/local/sbin:$PATH";
 export PATH="$PATH:$HOME/.npm/bin";
 export PATH="$PYENV_ROOT/bin:$PATH";
 export PATH="$HOME/.local/bin:$PATH";
+export PATH="$HOME/.cargo/bin:$PATH";
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc";
 
 # Add brew version of ruby to path
