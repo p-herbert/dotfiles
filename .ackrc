@@ -9,6 +9,9 @@
 --type-set=graphql=.graphql,.graphqls,.gql
 --ignore-file=is:tags
 --ignore-file=is:.tfplan
+--ignore-file=is:yarn.lock
+--ignore-file=is:yarn-error.log
+--ignore-file=is:package-lock.json
 
 # Directories #
 ###############
