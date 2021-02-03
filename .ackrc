@@ -27,4 +27,5 @@
 --ignore-directory=tmp
 --ignore-directory=patches
 --ignore-directory=.serverless
+--ignore-directory=.webpack
 
