@@ -12,4 +12,5 @@ tmp
 patches
 .serverless
 .webpack
+.nyc
 

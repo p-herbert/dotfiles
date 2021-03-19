@@ -28,4 +28,5 @@
 --ignore-directory=patches
 --ignore-directory=.serverless
 --ignore-directory=.webpack
+--ignore-directory=.nyc
 
