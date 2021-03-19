@@ -9,6 +9,8 @@ dist
 build
 amplify
 tmp
+.webpack
+.nyc
 
 # Temporary files #
 ###################
