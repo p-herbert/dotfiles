@@ -90,6 +90,8 @@ These are my personal dotfiles.
     git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
     ~~~
 
+10. Install [z] and [jq]
+
 [zsh]: https://www.zsh.org/
 [oh-my-zsh]: https://ohmyz.sh/
 [zsh-syntax-highlighting]: https://github.com/zsh-users/zsh-syntax-highlighting
@@ -98,4 +100,6 @@ These are my personal dotfiles.
 [pyenv]: https://github.com/pyenv/pyenv
 [brew]: https://brew.sh/
 [diff-so-fancy]: https://www.npmjs.com/package/diff-so-fancy
+[z]: https://github.com/rupa/z
+[jq]: https://github.com/jqlang/jq
 
