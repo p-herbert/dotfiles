@@ -19,6 +19,7 @@
 --ignore-directory=node_modules
 --ignore-directory=.meteor
 --ignore-directory=dist
+--ignore-directory=build
 --ignore-directory=bundle
 --ignore-directory=.terraform
 --ignore-directory=__generated__
@@ -30,4 +31,5 @@
 --ignore-directory=.serverless
 --ignore-directory=.webpack
 --ignore-directory=.nyc
+--ignore-directory=jooq
 
