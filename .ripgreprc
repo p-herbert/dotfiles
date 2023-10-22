@@ -11,4 +11,3 @@
 ##############
 --type-add=react:*.jsx
 --type-add=graphql:*.{graphql,graphqls,gpl}
-

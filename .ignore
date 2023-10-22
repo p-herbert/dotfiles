@@ -4,6 +4,7 @@ bundle
 tags
 .terraform
 .tfplan
+.terraform.lock.hcl
 __generated__
 build
 amplify
@@ -13,4 +14,6 @@ patches
 .serverless
 .webpack
 .nyc
-
+.git
+hashicorp-gpg-key.txt
+yarn.lock
