@@ -13,6 +13,9 @@ export _Z_DATA=$HOME/.z
 # Set pyenv directory
 export PYENV_ROOT=$HOME/.pyenv
 
+# Set nvm directory
+export NVM_DIR="$HOME/.nvm"
+
 # Check file exists or create it
 [ -f $_Z_DATA ] || touch $_Z_DATA
 
@@ -21,6 +24,9 @@ plugins=(git node npm nvm gnu-utils z)
 
 # User configuration
 source $ZSH/oh-my-zsh.sh
+
+# Add zsh highlighting
+source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Set Editor
 export EDITOR='nvim'
@@ -61,30 +67,19 @@ zle -N zle-keymap-select
 # Add paths
 export PATH=$(getconf PATH);
 export PATH="/sbin:$PATH";
+export PATH=/opt/homebrew/bin:$PATH
 export PATH="/usr/local/bin:$PATH";
 export PATH="/usr/local/sbin:$PATH";
-export PATH="$PATH:$HOME/.npm/bin";
 export PATH="$PYENV_ROOT/bin:$PATH";
-export PATH="$HOME/.local/bin:$PATH";
-export PATH="$HOME/.cargo/bin:$PATH";
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc";
-
-# Add brew version of ruby to path
-if [[ "$(uname -s)" == 'Darwin' && -x "$(command -v bash)" ]] ; then
-    export PATH="$(brew --prefix ruby)/bin:$PATH"
-    export PATH="$(gem environment gemdir)/bin:$PATH"
-fi
-
-# Configure nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
-# Configure Travis-CI
-[ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
-
-# Add zsh highlighting
-source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Init pyenv
 eval "$(pyenv init -)"
+
+# Configure nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Load fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
