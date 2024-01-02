@@ -27,7 +27,7 @@ These are my personal dotfiles.
 4. Install [zsh]
 
    ```bash
-   brew instal zsh zsh-completions
+   brew install zsh zsh-completions
    ```
 
 5. Install [oh-my-zsh]
