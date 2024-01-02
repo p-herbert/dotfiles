@@ -75,6 +75,7 @@ export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc";
 
 # Init pyenv
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 # Configure nvm
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
