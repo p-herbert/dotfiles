@@ -62,7 +62,7 @@ These are my personal dotfiles.
    npm i -g diff-so-fancy @microsoft/compose-language-service yarn neovim typescript
    ```
 
-10. Install poerline fonts
+10. Install powerline fonts
 
     ```bash
     git clone https://github.com/powerline/fonts.git --depth=1
