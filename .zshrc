@@ -16,6 +16,8 @@ export PYENV_ROOT=$HOME/.pyenv
 # Set nvm directory
 export NVM_DIR="$HOME/.nvm"
 
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home
+
 # Check file exists or create it
 [ -f $_Z_DATA ] || touch $_Z_DATA
 
