@@ -40,6 +40,13 @@ ulimit -n 2048
 # Expand aliases
 setopt aliases
 
+# History settings
+HISTSIZE=10000000
+SAVEHIST=10000000
+setopt hist_ignore_all_dups
+setopt share_history
+setopt hist_ignore_space
+
 # Vim bindings
 bindkey -v
 bindkey -v '^?' backward-delete-char
