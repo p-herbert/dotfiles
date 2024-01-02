@@ -45,8 +45,9 @@ These are my personal dotfiles.
 7. Install packages
 
    ```bash
-   brew install ack ripgrep the_silver_searcher fzf jq z terraform-ls tree shellcheck
-
+   brew install awscli ack act ripgrep the_silver_searcher fzf jq z \
+        terraform terraform-ls tree shellcheck efm-langserver docker-completion \
+        yamllint openssl
    ```
 
 8. Install [node]
