@@ -62,6 +62,22 @@ These are my personal dotfiles.
    npm i -g diff-so-fancy @microsoft/compose-language-service yarn neovim typescript
    ```
 
+10. Install poerline fonts
+
+    ```bash
+    git clone https://github.com/powerline/fonts.git --depth=1
+    cd fonts && ./install.sh
+    cd ..
+    rm -rf fonts
+    ```
+
+11. Install nerd fonts
+
+    ```bash
+    brew tap homebrew/cask-fonts
+    brew install font-hack-nerd-font
+    ```
+
 ### Ubuntu
 
 TODO
