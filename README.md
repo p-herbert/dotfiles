@@ -47,7 +47,7 @@ These are my personal dotfiles.
    ```bash
    brew install awscli ack act ripgrep the_silver_searcher fzf jq z \
         terraform terraform-ls tree shellcheck efm-langserver docker-completion \
-        yamllint openssl
+        yamllint openssl neovim
    ```
 
 8. Install [node]
