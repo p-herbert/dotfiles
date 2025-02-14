@@ -78,6 +78,7 @@ export PATH="/opt/homebrew/bin:$PATH";
 export PATH="/usr/local/bin:$PATH";
 export PATH="/usr/local/sbin:$PATH";
 export PATH="$PYENV_ROOT/bin:$PATH";
+export PATH="/usr/local/go/bin:$PATH";
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc";
 
 # Init pyenv
