@@ -32,3 +32,4 @@
 --ignore-directory=.webpack
 --ignore-directory=.nyc
 --ignore-directory=jooq
+--ignore-directory=.yarn
